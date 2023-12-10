@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <title>MYT4U</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png"/>
 </head>
 <body>
-    
+    <div id="div_clock">
+        <i class="fa-regular fa-calendar-days"></i>
+        <span id="view_date">0000-00-00</span>
+        
+        <br/>
+        
+        <i class="fa-regular fa-clock"></i>
+        <span id="view_clock">00:00:00</span>
+    </div>
+
+    <div id="div_login">
+        <form>
+            <input id="inp_username" type="text" placeholder="username" required>
+            <button id="btn_login">Login</button>
+            <span id="show_username" class="hidden"></span>
+        </form>
+    </div>
+
+    <div id="div_todoList" class="hidden">
+        <form>
+            <input id="inp_todo" type="text" placeholder="write to do things"/>
+            <button id="btn_todo">Enter</button>
+            <ul id="ul_todo">
+
+            </ul>
+        </form>
+    </div>
+
+    <div id="div_weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <script src="clock.js" ></script>
+    <script src="login.js" ></script>
+    <script src="todoList.js"></script>
+    <script src="geolocation.js"></script>
+
+    <script src="https://kit.fontawesome.com/f61ac96fca.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
